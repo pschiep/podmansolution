@@ -1,0 +1,15 @@
+services:
+  webapi1:
+    image: "psss/webapi1:latest"
+    ports:
+      - "35001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    working_dir: /app
+  webapi2:
+    image: "psss/webapi2:latest"
+    ports:
+      - "35002:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    working_dir: /app
